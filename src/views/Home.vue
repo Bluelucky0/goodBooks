@@ -3,8 +3,14 @@
 </template>
 
 <script>
+import { getBookCategory,getBookList } from '../services/index'
 export default {
-  name:'Home'
+  name:'Home',
+  mounted() {
+    const Category = getBookCategory();
+    console.log(Category);
+
+  },
 }
 </script>
 
